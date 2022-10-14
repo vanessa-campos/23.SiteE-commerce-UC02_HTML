@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+/* --------------------------------------------------- FONTES ------------------------------------------------------------- */
+
+p{    
+    font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 18px;
+}
+h1{    
+    font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 32px;
+}
+h2{    
+    font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 24px;
+}
+h3{
+    font-family: 'Roboto', sans-serif; font-weight: 500;
+}
+h4{
+    font-family: 'Roboto', sans-serif; font-weight: 900;
+}
+h5{
+    font-family: 'Roboto', sans-serif; color: #74CCA2;
+    font-weight: 900; font-size: 24px;
+}
+h6{    
+    font-family: 'Roboto', sans-serif; font-weight: 100; font-size: 14px;
+}
+
+/* ------------------------------------------------------ COMPONENTES COMUNS --------------------------------------------------------------- */
+
+input:focus{
+    outline: none;
+}
+.arrow, .arrowTop{    
+    display: flex; justify-content: center; align-items: center;
+    height: 40px;  width: 40px; background-color: #e5e5e5;
+    border-radius: 50%;  border: none;  cursor: pointer;
+}
+.arrow .color{
+    color: gray;
+}
+.arrow:hover, .arrowTop:hover{
+    background: #ccc;
+}
+.dotGreen{
+    height: 35px; width: 35px; 
+    background-color: #85d2ad; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+}
+.star{
+    color: #fff022;
+}
+.star:hover{
+    opacity: 50%; cursor: pointer;
+}
+/* ------------------------------------------------------ BARRA SUPERIOR INFO --------------------------------------------------------------- */
+
+.headerInfo {
+    position: fixed; top: -5px; width: 100%; overflow: hidden; 
+}
+.headerInfo .container{
+    display: flex; align-items: center; justify-content: space-between; gap: 50px;
+    margin-top: 5px; border-bottom: 2px solid #b3adad; background-color: #ffffff;
+}
+.headerInfo u{
+    color: #74CCA2; font-weight: 900; text-decoration: none;
+}
+.headerInfo u:hover{
+    text-decoration: underline; cursor: pointer;
+}
+.headerInfo .contact{
+    display: flex; align-items: center; justify-content: flex-start;
+    gap: 10px; margin-left: 35px;    
+}
+.headerInfo .text{
+    margin-right: 35px;
+}
+
+/* ------------------------------------------------------ BARRA SUPERIOR PESQUISA --------------------------------------------------------------- */
+
+.headerSearch{
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    align-items: center; align-content: center;
+    gap: 10px 20px; margin: 60px 35px 20px 35px;
+}
+.headerSearch .searchbar{
+    display: flex; align-items: center; width: 585px;
+}
+.headerSearch input{    
+    background-color: #f2f2f2; border: none;
+    min-width: 400px; width: 570px; height: 55px;
+    font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 18px;
+    padding-left: 20px;
+}
+.headerSearch button{
+    background: #ffffff; border: solid 1px #b3adad;
+    width: 40px; height: 40px;  margin-left: -17.5px;  
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0.5;
+}
+.headerSearch button:hover{
+    color: #ccc; cursor: pointer;
+}
+.headerSearch .container1{
+    display: flex; justify-content: center; 
+    align-items: center; column-gap: 7px;
+}
+.headerSearch .container1 img:hover{
+    opacity: .5;
+}
+.headerSearch .container2{
+    display: flex; flex-wrap: wrap; 
+    justify-content: center; align-items: center;
+}
+.headerSearch .container3{    
+    display: flex; flex-wrap: wrap;
+    justify-content: center; align-items: center;
+    column-gap: 3px; margin-left: 25px;
+}
+.headerSearch a{
+    text-decoration: none; cursor: pointer; color: #000;
+}
+
+.headerSearch a:hover{
+    text-decoration: underline;
+}
+.headerSearch .container2 a:hover{
+    color: #ccc; text-decoration: none;
+}
+.headerSearch #linkMenu a:hover{
+    color: #000; text-decoration: underline;
+    text-decoration-color: #74CCA2; text-decoration-thickness: 3px;
+}
+.headerSearch .linkPromo a{
+    color: #74CCA2; font-weight: 900;
+}
+.headerSearch .container2 b{
+    font-family: 'Roboto', sans-serif; color: #74CCA2;
+    font-weight: 900; font-size: 30px;
+}
+
+/* ---------------------------------------------------------- CADASTRO E ATALHOS ----------------------------------------------------------- */
+
+.newsletter{
+    background: #faf9f9; text-align: center;  
+}
+.newsletter form{
+    display: flex; flex-wrap: wrap; 
+    gap: 10px 10px; margin-left: 10%; margin-right: 10%;
+}
+.newsletter input{
+    border: 1px solid #b3adad; border-radius: 10px;
+    width: 27%; height: 35px; font-family: 'Roboto', sans-serif; 
+    font-weight: 300; font-size: 18px; padding-left: 15px;
+}
+#Email{
+    width: 39%;
+}
+.newsletter input:focus {
+    border: 3px solid #b3adad;
+}
+.newsletter input[type=submit]{
+    background: #85d2ad; border: none; border-radius: 10px;
+    height: 40px; width: 100%; cursor: pointer;
+    font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 24px;  
+    text-align: center; color: #ffffff;
+}
+.newsletter input[type=submit]:hover{
+    background: #ccc;
+}
+.newsletter .line{
+    border-top: 2px solid #e5e5e5; 
+    max-width: 100%; height: 20px;
+    margin-top: 15px; margin-left: 110px; margin-right: 110px;
+}
+.newsletter .container1{
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    align-items: center; text-align: left; line-height: 70%;
+    margin-left: 60px; margin-right: 60px; margin-top: 10px;
+}
+.newsletter .container2{
+    display: flex; flex-wrap: wrap; justify-content: space-evenly;
+    align-items: baseline; column-gap: 100px; margin-bottom: 20px;
+}
+.newsletter .container2 h1{
+    font-size: 24px;
+}
+.newsletter .atalhos{
+    justify-content: flex-start; line-height: 70%;
+}
+.newsletter .imagens{
+    display: flex; align-items: center;
+}
+.newsletter img:hover{
+    opacity: .5;
+}
+.newsletter a{
+    text-decoration: none; color: #000;
+}
+.newsletter a:hover{
+    text-decoration: underline; cursor: pointer;
+}
+#tooltip{
+    width: 150px; height: 30px; background-color: #85d2ad; border-radius: 6px; display: flex; justify-content: center; align-items: center; margin-top: -11%;
+}
+#tooltip p{
+    color: #fff; text-align: center; font-size: 14px; font-weight: 500;
+}
+/* ------------------------------------------------------- BARRA INFERIOR -------------------------------------------------------------- */
+
+.footer{
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 10px; margin-left: 60px;    
+}
+.footer b{
+    color: #74CCA2; font-weight: 500;
+}
+.footer .container{
+    display: flex; justify-content: flex-end; align-items: center;
+    gap: 10px; margin-right: 60px;
+}
+
+/* ------------------------------------------------------- CARROSEL PRODUTOS -------------------------------------------------------------- */
+.produtos{
+    margin-bottom: 40px; 
+}
+.produtos #line{
+    border-bottom: solid 2px #e5e5e5; width: 94%; height: 50px; margin-left: 3%; margin-right: 3%;
+}
+.produtos .titulo, .produtos .titulo2{    
+    display: flex; justify-content: center; align-items: center; margin-top: -20px; margin-left: 40%;
+    background-color: #ffffff; width: 220px; height: 40px; 
+    border: 2px solid #e5e5e5; border-radius: 20px;
+}
+.produtos .titulo2{
+    width: 480px; margin-left: 30%;
+}
+.titulo h1, .titulo2 h1{
+    font-size: 24px;
+}
+.titulo2 b{
+    font-weight: 300;
+}
+.produtos .arrows{
+    display: flex; justify-content: space-between; align-items: center;
+    align-content: center; margin: 14% 30px -17% 30px;
+}
+.produtos .container{
+    display: flex; justify-content: space-evenly; flex-wrap: wrap;
+    margin-left: 5%; margin-right: 5%; min-height: 400px; width: 90%; 
+}
+.produtos .heart{
+    display: flex; justify-content: center; align-items: center; height: 40px;  width: 40px; 
+    background-color: #e5e5e5;border-radius: 50%;  border: none;  cursor: pointer;
+    margin-left: 150px; margin-top: -275px;
+}
+.produtos .heart:hover{
+    background: #ccc; cursor: pointer;
+}
+.produtos a{
+    text-decoration: none; color: #000;
+}
+.produto1 .bordaProduto, .produto2 .bordaProduto, .produto3 .bordaProduto{
+    display: flex; flex-wrap: wrap; justify-content: center; align-items: center; 
+    width: 220px; height: 350px; font-size: 24px; text-align: center; margin-top: 20px;
+}
+.produto1 .bordaProduto:hover, .produto2 .bordaProduto:hover, .produto3 .bordaProduto:hover{
+    border: solid 2px #74CCA2; border-radius: 20px;    
+}
+.produto1 .container1, .produto2 .container1, .produto3 .container1{      
+    display: flex; flex-wrap: wrap; justify-content: center;
+    align-items: center; width: 160px; margin-bottom: -20px; margin-top: 10px;
+}
+.produto1 .text, .produto2 .text, .produto3 .text{
+    width: 210px; font-weight: 400; margin-bottom: -15px;
+}   
+.produto1 .container2, .produto2 .container2, .produto3 .container2{    
+    display: flex; flex-wrap: wrap; justify-content: center;
+    align-items: center; column-gap: 10px; margin-top: -40px;
+}
+.produto1 .container2 a:hover, .produto2 .container2 a:hover, .produto3 .container2 a:hover{
+    opacity: .7;
+}
+.produtos button{
+    border: none; font-size: 24px;
+}
+.produtos button:hover{
+    background: #ccc; cursor: pointer;
+}
+

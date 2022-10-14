@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+/* ------------------------------------------------------ CARROSEL IMAGENS -------------------------------------------------------------- */
+
+.slideshow{
+    height: auto;
+}
+.slideshow img{
+    width: 100%;
+}
+.mySlides{
+    display: none;
+}
+.mySlides .numbers p{
+    color: #74CCA2;  font-weight: 700;  font-size: 12px; 
+    margin-top: 0,5%; margin-left: 1%; position: absolute; 
+}
+.arrows{
+    display: flex; justify-content: space-between;
+    margin: -20% 20px 17% 20px;
+}
+.dots{    
+    display: flex; justify-content: center; align-items: center;
+    column-gap: 15px; margin-top: -3%; height: 40px;
+}
+.dots .dot{    
+    height: 20px; width: 20px; background-color: #85d2ad; 
+    border-radius: 50%; border: none; display: inline-block;
+}
+.dots .active, .dot:hover{     
+    height: 15px; width: 15px; background-color: #85d2ad; 
+    border-radius: 50%; border: solid 6px #9a9393;
+    display: inline-block;
+}
+
+
+/* -------------------------------------------------------- DESTAQUES ------------------------------------------------------------- */
+
+.destaques{
+    display: flex; flex-wrap: wrap; justify-content: space-evenly;
+    align-items: baseline; background-color: #d9e8e1;
+}
+.destaques .component{
+    text-align: center; max-width: 220px; height: 200px;
+    margin-top: 20px; margin-bottom: -10px;
+}
+.destaques .component .text{    
+    margin-top: 7px; margin-bottom: -15px;
+}
+
+/* ---------------------------------------------------------- CATEGORIAS ----------------------------------------------------------- */
+
+.categorias{
+    background-color: #faf9f9;
+    display: flex; flex-wrap: wrap; justify-content: center;
+    align-items: baseline; column-gap: 20px;
+}
+.categorias .component{
+    display: flex; flex-wrap: wrap; align-items: stretch;
+    justify-content: center; text-align: center;
+    background-color: #ffffff; width: 180px; height: 240px;
+    border: solid 1px #74CCA2; border-radius: 20px;
+    margin-top: 20px; margin-bottom: 10px;
+}
+.categorias .type{
+    display: flex; justify-content: center; align-items: center;
+    height: 95px; width: 95px;
+    background-color: #e5e5e5; border-radius: 50%;
+    margin-top: 20px; margin-bottom: -30px;
+}
+.categorias .text{
+    font-size: 16px; width: 175px; margin-top: -35px;
+}
+.categorias a{
+    text-decoration: none; color: #000;
+}
+.categorias a:hover{
+    opacity: 70%; 
+}
+
+/* ------------------------------------------------------- DEPOIMENTOS -------------------------------------------------------------- */
+
+.depoimentos{
+    display: flex; flex-wrap: wrap; 
+    background-color: #d9e8e1; min-height: 300px;
+}
+.depoimentos b{
+    font-weight: 300;
+}
+.depoimentos .container1{
+    margin: 10px 60px 0px 60px;
+}
+.depoimentos .container2 {    
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 15px 20px; margin: 0px 5% 40px 5%;
+}
+.depoimentos .container2 .component{     
+    display: flex; height: 170px; width: 410px;
+}
+.component .avatar{ 
+    display: flex; flex-wrap: wrap; width: 105px;
+}
+.avatar .text1{
+    margin-top: -25px; margin-bottom: -10px;
+}
+.avatar .text2{
+    margin-top: -50px; margin-bottom: 25px;
+}
+.dotAvatar{    
+    display: flex; justify-content: center; align-items: center;
+    height: 68px; width: 68px; background-color: #f2f2f2;
+    border: solid 2px #5a5959; border-radius: 50%; margin-top: 35px; 
+}
+.baloonArrow{
+    margin: 30px -2px 0px -30px;
+}
+.baloon{
+    align-content: center; align-items:center; text-align: justify;
+    background-color: #ffffff; width: 300px; height: 170px;
+    border: solid 1px #74CCA2; border-radius: 40px;
+    display: flex; flex-wrap: wrap; justify-content: flex-start;
+}
+.baloon .container{
+    margin: 30px;
+}
+.baloon .text1 h6{
+    font-size: 16px;
+}
+.baloon .text2{
+    margin-top: -45px; margin: -55px 30px 0px 30px;
+}

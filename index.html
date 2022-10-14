@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <meta name="author" content="Vanessa Campos">
+    <meta name="keywords" content="Loja Virtual da Produtos Naturais">
+    <meta name="description" content="Este site é destinado a venda e distribuição de produtos da loja Produtos Naturais">
+    <title>Produtos Naturais - Início</title>
+
+    <link rel="stylesheet" type="text/css" href="style0.css">    
+    <link rel="stylesheet" type="text/css" href="style1.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+<header>
+    <div class="headerInfo">   
+        <div class="container">
+            <div class="contact">
+                <i class="fab fa-whatsapp fa-w-14 fa-2x" ></i>   
+                <p>(XX) XXXXX-XXXX </p>
+            </div>
+            <p class="text"><u onclick="bottomPage()">Cadastre-se</u> e receba novidades</p>
+        </div>
+    </div>
+    <div class="headerSearch">
+            <a href=""><img src="imagens/logo.png" alt="logoProdutosNaturais" width="375" height="110"></a>
+            <div class="searchbar">
+                <input type="text" placeholder="Qual produto você procura?">        
+                <button type="submit"><i class="fas fa-search fa-w-14 fa-2x"></i></button>
+            </div>
+        <div class="container1">
+            <p><a href="">Entre ou Cadastre-se</a></p>
+            <a href=""><img src="imagens/user-profile-computer.png" alt="perfil" width="32"></a>
+            <a href=""><img src="imagens/heart.png" alt="favoritos" width="35"></a>
+            <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39"></a>
+            <span class="dotGreen"><h3>0</h3></span>
+        </div>        
+        <div class="container2">
+            <img src="imagens/menu.png" alt="menu" width="35" height="33">
+            <h3 id="linkMenu"><a href="">TODOS OS DEPARTAMENTOS</a></h3>
+            <div class="container3">
+                <h3><a href=""> KIDS </a></h3><b>|</b>
+                <h3><a href=""> FRUTAS SECAS </a></h3><b>|</b>
+                <h3><a href=""> MERCEARIA </a></h3><b>|</b>
+                <h3><a href=""> NATAL </a></h3><b>|</b>
+                <h3><a href=""> NATUROPATIA </a></h3><b>|</b>
+                <h3><a href=""> NATURAIS </a></h3><b>|</b>
+                <h3><a href=""> SUPLEMENTOS </a></h3><b>|</b>
+                <h3><a href=""> VEGETARIANOS </a></h3><b>|</b>
+                <h3 class="linkPromo"><a href="">PROMOÇÃO </a></h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div>
+        <div class="slideshow">
+            <div class="mySlides fade">
+                <div class="numbers"><p>1 / 3</p></div>
+                <img src="imagens/slide/img1-pexels-roman-odintsov-5150205.jpg" alt="sobremesas-com-grãos">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbers"><p>2 / 3</p></div>
+                <img src="imagens/slide/img2-pexels-ella-olsson-1640770.jpg" alt="salada-com-frutas">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbers"><p>3 / 3</p></div>
+                <img src="imagens/slide/img3-pexels-taryn-elliott-4099237.jpg" alt="iogurte-com-frutas-vermelhas">
+            </div>
+        </div>
+        <div class="arrows">
+            <div class="arrow" onclick="plusSlides(-1)"><i class="fas fa-chevron-left color"></i></div> 
+            <div class="arrow" onclick="plusSlides(1)"><i class="fas fa-chevron-right color"></i></div> 
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="currentSlide(1)"></div>
+            <div class="dot" onclick="currentSlide(2)"></div>
+            <div class="dot" onclick="currentSlide(3)"></div>
+        </div>  
+    </div>
+
+    <div class="destaques">
+        <div class="component">
+            <img src="imagens/icon-package.png" width="80" height="80">
+            <h3 class="text">FRETE GRÁTIS</h3>
+            <p>Consulte as regras da promoção</p>
+        </div>
+        <div class="component">
+            <img src="imagens/credit-card-icon.png" width="80" height="80">
+            <h3 class="text">PARCELE SUA COMPRA</h3>
+            <p>Parcele em até 3x sem juros no cartão de crédito</p>
+        </div>
+        <div class="component">
+            <img src="imagens/icons-delivery.png" width="80" height="80">
+            <h3 class="text">ENTREGA EXPRESSA</h3>
+            <p>Recebe suas compras em até 3 dias*. Consulte o CEP</p>
+        </div>
+        <div class="component">
+            <img src="imagens/padlock.png" width="80" height="80">
+            <h3 class="text">COMPRA SEGURA</h3>
+            <p>Garantia de segurança e privacidade dos seus dados</p>
+        </div>
+    </div>
+
+    <div class="categorias">
+        <a href=""><div class="component">
+            <div class="type">
+                <img src="imagens/carbohydrates-icon.png" width="70" alt="low carb">
+            </div>
+            <h5>LOW CARB</h5>
+            <p class="text">Alimentos com baixa quantidade de carboidratos</p>
+        </div></a>
+        <a href=""><div class="component">
+            <div class="type">
+                <img src="imagens/organic.png" width="70" alt="organic">
+            </div>
+            <h5>ORGÂNICO</h5>
+            <p class="text">Alimentos sem pesticidas e fertilizantes químicos</p>
+        </div></a> 
+        <a href=""><div class="component">
+            <div class="type">
+                <img src="imagens/gluten-free.png" width="70" alt="gluten free">
+            </div>
+            <h5>SEM GLÚTEN</h5>
+            <p class="text">Alimentos sem a proteína do trigo, aveia, centeio, cevada e malte</p>
+        </div></a>
+        <a href=""><div class="component">
+            <div class="type">
+                <img src="imagens/lactose.png" width="70" alt="lactose free">
+            </div>
+            <h5>SEM LACTOSE</h5>
+            <p class="text">Alimentos sem leite e seus derivados</p>
+        </div></a>
+        <a href=""><div class="component">
+            <div class="type">
+                <img src="imagens/vegan.png" width="70" alt="vegan">
+            </div>
+            <h5>VEGANO</h5>
+            <p class="text">Alimentos sem ingredientes de origem animal: leite, ovo e mel</p>
+        </div></a>
+        <a href=""><div class="component">
+            <div class="type">
+                <img src="imagens/vegetarian.png" width="70" alt="vegetarian">
+            </div>
+            <h5>VEGETARIANO</h5>
+            <p class="text">Alimentos sem carne. Ovos e laticínios são permitidos</p>
+        </div></a>
+    </div>
+
+    <div class="produtos">     
+        <div id="line"></div>
+        <div class="titulo">
+            <h1>DESTAQUES</h1>   
+        </div> 
+        <div>   
+            <div class="arrows">
+                <div class="arrow left" onclick="plusProduto(-1,0)"><i class="fas fa-chevron-left color"></i></div> 
+                <div class="arrow right" onclick="plusProduto(1,0)"><i class="fas fa-chevron-right color"></i></div> 
+            </div>    
+            <div class="container">
+                <div class="produto1">    
+                    <div class="bordaProduto">
+                        <a href=""> <div class="container1">
+                            <img src="imagens/produtosDestaque/Panetone-Sem-Gluten-e-Lactose-com-Chocolate-50--Cacau-420g-Belive.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                            <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                            <p>(0)</p>
+                        </div> </a>
+                        <div class="heart"><i class="far fa-heart"></i></div>         
+                        <p class="text">Resumo do Produto: nome e descrição</p> 
+                        <h3>R$ 00,00</h3>
+                        <div class="container2">
+                            <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                            <button class="dotGreen"><h3>-</h3></button>
+                            <h3>0</h3>
+                            <button class="dotGreen"><h3>+</h3></button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="produto1">
+                    <div class="bordaProduto">
+                    <a href=""> <div class="container1">
+                        <img src="imagens/produtosDestaque/Biscoito-Holandes-Spekulaas-Wafel-135g-Moinho-Wafers.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                        <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                        <p>(0)</p>
+                    </div>  </a>    
+                    <div class="heart"><i class="far fa-heart"></i></div>  
+                    <p class="text">Resumo do Produto: nome e descrição</p> 
+                    <h3>R$ 00,00</h3>
+                    <div class="container2">
+                        <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                        <button class="dotGreen"><h3>-</h3></button>
+                        <h3>0</h3>
+                        <button class="dotGreen"><h3>+</h3></button>
+                    </div>
+                </div>
+                </div>
+                <div class="produto1">
+                    <div class="bordaProduto">
+                    <a href=""> <div class="container1">
+                        <img src="imagens/produtosDestaque/Farinha-de-Mandioca-da-Floresta-350g-Regenera.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                        <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                        <p>(0)</p>
+                    </div> </a>
+                    <div class="heart"><i class="far fa-heart"></i></div>  
+                    <p class="text">Resumo do Produto: nome e descrição</p>  
+                    <h3>R$ 00,00</h3>
+                    <div class="container2">
+                        <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                        <button class="dotGreen"><h3>-</h3></button>
+                        <h3>0</h3>
+                        <button class="dotGreen"><h3>+</h3></button>
+                    </div>
+                </div>
+                </div>
+                <div class="produto1">
+                    <div class="bordaProduto">
+                    <a href=""><div class="container1">
+                        <img src="imagens/produtosDestaque/Classic-New-Year-300g-The-New-Foods.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                        <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                        <p>(0)</p>
+                    </div></a>
+                    <div class="heart"><i class="far fa-heart"></i></div>  
+                    <p class="text">Resumo do Produto: nome e descrição</p>                            
+                    <h3>R$ 00,00</h3>
+                    <div class="container2">
+                        <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                        <button class="dotGreen"><h3>-</h3></button>
+                        <h3>0</h3>
+                        <button class="dotGreen"><h3>+</h3></button>
+                    </div>
+                </div>
+                </div>
+                <div class="produto1">
+                    <div class="bordaProduto">
+                    <a href=""><div class="container1">
+                        <img src="imagens/produtosDestaque/Pasta-de-Castanha-de-Caju-Doce-de-Leite-300g-Eat-Clean.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                        <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                        <p>(0)</p>
+                    </div> </a>
+                    <div class="heart"><i class="far fa-heart"></i></div>       
+                    <p class="text">Resumo do Produto: nome e descrição</p> 
+                    <h3>R$ 00,00</h3>
+                    <div class="container2">
+                        <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                        <button class="dotGreen"><h3>-</h3></button>
+                        <h3>0</h3>
+                        <button class="dotGreen"><h3>+</h3></button>
+                    </div>
+                </div>
+                </div>                
+                <div class="produto1">
+                    <div class="bordaProduto">
+                    <a href=""> <div class="container1">
+                        <img src="imagens/produtosSuplementos/BestWheySacheBrigadeiroGourmet.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                        <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                        <p>(0)</p>
+                    </div> </a>
+                    <div class="heart"><i class="far fa-heart"></i></div>  
+                    <p class="text">Resumo do Produto: nome e descrição</p>  
+                    <h3>R$ 00,00</h3>
+                    <div class="container2">
+                        <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                        <button class="dotGreen"><h3>-</h3></button>
+                        <h3>0</h3>
+                        <button class="dotGreen"><h3>+</h3></button>
+                    </div>
+                </div>
+                </div>
+                <div class="produto1">
+                    <div class="bordaProduto">
+                    <a href=""> <div class="container1">
+                        <img src="imagens/produtosSuplementos/latas-p_bcaa-neutro.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                        <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                        <p>(0)</p>
+                    </div>  </a>    
+                    <div class="heart"><i class="far fa-heart"></i></div>  
+                    <p class="text">Resumo do Produto: nome e descrição</p> 
+                    <h3>R$ 00,00</h3>
+                    <div class="container2">
+                        <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                        <button class="dotGreen"><h3>-</h3></button>
+                        <h3>0</h3>
+                        <button class="dotGreen"><h3>+</h3></button>
+                    </div>
+                </div>
+                </div>                
+                <div class="produto1">
+                    <div class="bordaProduto">
+                    <a href=""><div class="container1">
+                        <img src="imagens/produtosSuplementos/Whey-Protein-Concentrado-Chocolate-Sache-28g-Dux.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                        <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                        <p>(0)</p>
+                    </div> </a>
+                    <div class="heart"><i class="far fa-heart"></i></div>       
+                    <p class="text">Resumo do Produto: nome e descrição</p> 
+                    <h3>R$ 00,00</h3>
+                    <div class="container2">
+                        <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                        <button class="dotGreen"><h3>-</h3></button>
+                        <h3>0</h3>
+                        <button class="dotGreen"><h3>+</h3></button>
+                    </div>
+                </div>
+                </div>  
+            </div>  
+        </div>     
+        <div id="line"></div>
+        <div class="titulo">
+            <h1>SUPLEMENTOS</h1>   
+        </div> 
+        <div>   
+            <div class="arrows">
+                <div class="arrow left" onclick="plusProduto(-1,1)"><i class="fas fa-chevron-left color"></i></div> 
+                <div class="arrow right" onclick="plusProduto(1,1)"><i class="fas fa-chevron-right color"></i></div> 
+            </div>  
+            <div class="container">
+                <div class="produto2">
+                <div class="bordaProduto">
+                <a href=""><div class="container1">
+                    <img src="imagens/produtosSuplementos/latas-p_carbolift.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                    <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                    <p>(0)</p>
+                </div>  </a> 
+                <div class="heart"><i class="far fa-heart"></i></div>    
+                <p class="text">Resumo do Produto: nome e descrição</p>  
+                <h3>R$ 00,00</h3>
+                <div class="container2">
+                    <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39"></a>
+                    <button class="dotGreen"><h3>-</h3></button>
+                    <h3>0</h3>
+                    <button class="dotGreen"><h3>+</h3></button>
+                </div>
+            </div>
+                </div>
+                <div class="produto2">
+                <div class="bordaProduto">
+                <a href=""><div class="container1">
+                    <img src="imagens/produtosSuplementos/latas-p_bcaa-neutro.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                    <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                    <p>(0)</p>
+                </div>  </a> 
+                <div class="heart"><i class="far fa-heart"></i></div>      
+                <p class="text">Resumo do Produto: nome e descrição</p> 
+                <h3>R$ 00,00</h3>
+                <div class="container2">
+                    <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39"></a>
+                    <button class="dotGreen"><h3>-</h3></button>
+                    <h3>0</h3>
+                    <button class="dotGreen"><h3>+</h3></button>
+                </div>
+            </div>
+                </div>
+                <div class="produto2">
+                <div class="bordaProduto">
+                <a href=""><div class="container1">
+                    <img src="imagens/produtosSuplementos/Whey-Protein-Concentrado-Sabor-Mousse-de-Chocolate-Branco-907g-Chef-Whey.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                    <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                    <p>(0)</p>
+                </div></a>
+                <div class="heart"><i class="far fa-heart"></i></div>  
+                <p class="text">Resumo do Produto: nome e descrição</p>   
+                <h3>R$ 00,00</h3>
+                <div class="container2">
+                    <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39"></a>
+                    <button class="dotGreen"><h3>-</h3></button>
+                    <h3>0</h3>
+                    <button class="dotGreen"><h3>+</h3></button>
+                </div>
+            </div>
+                </div>
+                <div class="produto2">
+                <div class="bordaProduto">
+                <a href=""><div class="container1">
+                    <img src="imagens/produtosSuplementos/BestWheySacheBrigadeiroGourmet.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                    <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                    <p>(0)</p>
+                </div></a>
+                <div class="heart"><i class="far fa-heart"></i></div>  
+                <p class="text">Resumo do Produto: nome e descrição</p>  
+                <h3>R$ 00,00</h3>
+                <div class="container2">
+                    <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39"></a>
+                    <button class="dotGreen"><h3>-</h3></button>
+                    <h3>0</h3>
+                    <button class="dotGreen"><h3>+</h3></button>
+                </div>
+            </div>
+                </div>
+                <div class="produto2">
+                <div class="bordaProduto">
+                <a href=""><div class="container1">
+                    <img src="imagens/produtosSuplementos/Whey-Protein-Concentrado-Chocolate-Sache-28g-Dux.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                    <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+                    <p>(0)</p>
+                </div></a>
+                <div class="heart"><i class="far fa-heart"></i></div>  
+                <p class="text">Resumo do Produto: nome e descrição</p>     
+                <h3>R$ 00,00</h3>
+                <div class="container2">
+                    <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39"></a>
+                    <button class="dotGreen"><h3>-</h3></button>
+                    <h3>0</h3>
+                    <button class="dotGreen"><h3>+</h3></button>
+                </div>
+            </div>
+                </div>
+                <div class="produto2">    
+                    <div class="bordaProduto">
+                        <a href=""> <div class="container1">
+                            <img src="imagens/produtosDestaque/Panetone-Sem-Gluten-e-Lactose-com-Chocolate-50--Cacau-420g-Belive.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                            <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                            <p>(0)</p>
+                        </div> </a>
+                        <div class="heart"><i class="far fa-heart"></i></div>         
+                        <p class="text">Resumo do Produto: nome e descrição</p> 
+                        <h3>R$ 00,00</h3>
+                        <div class="container2">
+                            <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                            <button class="dotGreen"><h3>-</h3></button>
+                            <h3>0</h3>
+                            <button class="dotGreen"><h3>+</h3></button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="produto2">
+                    <div class="bordaProduto">
+                    <a href=""> <div class="container1">
+                        <img src="imagens/produtosDestaque/Biscoito-Holandes-Spekulaas-Wafel-135g-Moinho-Wafers.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                        <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                        <p>(0)</p>
+                    </div>  </a>    
+                    <div class="heart"><i class="far fa-heart"></i></div>  
+                    <p class="text">Resumo do Produto: nome e descrição</p> 
+                    <h3>R$ 00,00</h3>
+                    <div class="container2">
+                        <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                        <button class="dotGreen"><h3>-</h3></button>
+                        <h3>0</h3>
+                        <button class="dotGreen"><h3>+</h3></button>
+                    </div>
+                </div>
+                </div>
+                <div class="produto2">
+                    <div class="bordaProduto">
+                    <a href=""> <div class="container1">
+                        <img src="imagens/produtosDestaque/Farinha-de-Mandioca-da-Floresta-350g-Regenera.png" width="140" height="124" alt="panetone sem gluten e lactose">                
+                        <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                        <p>(0)</p>
+                    </div> </a>
+                    <div class="heart"><i class="far fa-heart"></i></div>  
+                    <p class="text">Resumo do Produto: nome e descrição</p>  
+                    <h3>R$ 00,00</h3>
+                    <div class="container2">
+                        <a href=""><img src="imagens/icons-shopping-bags.png" alt="sacola" width="39" height="39"></a>
+                        <button class="dotGreen"><h3>-</h3></button>
+                        <h3>0</h3>
+                        <button class="dotGreen"><h3>+</h3></button>
+                    </div>
+                </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+
+    <div class="depoimentos">
+        <div class="container1">
+                <h1><b>DEPOIMENTOS DE </b>CLIENTES</h1>
+        </div>
+        <div class="container2">
+                <div class="component">
+                    <div class="avatar">
+                        <div class="dotAvatar"><img src="imagens/user-profile-avatar-profile-female.png" alt="avatar" height="42"></div>
+                        <div class="text1"><h6><b>Nome Cliente</b></h6></div>
+                        <div class="text2"><h6><i>Local</i></h6></div>
+                    </div>    
+                    <div class="baloonArrow"><img src="imagens/arrowBaloon.png" width="30px" height="50px"></div>
+                    <div class="baloon">
+                        <div class="container"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="far fa-star star"></i></div>
+                        <div  class="text1"><h6><i>• 00/00/00</i></h6></div>
+                        <div class="text2"><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus.</h6></div>                                         
+                    </div>
+                </div>
+                <div class="component">
+                    <div class="avatar">
+                        <div class="dotAvatar"><img src="imagens/avatar-user-profile-male.png" alt="avatar" height="42"></div>
+                        <div class="text1"><h6><b>Nome Cliente</b></h6></div>
+                        <div class="text2"><h6><i>Local</i></h6></div>
+                    </div>    
+                    <div class="baloonArrow"><img src="imagens/arrowBaloon.png" width="30px" height="50px"></div>
+                    <div class="baloon">
+                        <div class="container"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="far fa-star star"></i><class="far fa-star star"></i></div>
+                        <div class="text1"><h6><i>• 00/00/00</i></h6></div>
+                        <div class="text2"><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus.</h6></div>
+                    </div>
+                </div>
+                <div class="component">
+                    <div class="avatar">
+                        <div class="dotAvatar"><img src="imagens/user-profile-avatar-profile-female.png" alt="avatar" height="42"></div>
+                        <div class="text1"><h6><b>Nome Cliente</b></h6></div>
+                        <div class="text2"><h6><i>Local</i></h6></div>
+                    </div>    
+                    <div class="baloonArrow"><img src="imagens/arrowBaloon.png" width="30px" height="50px"></div>
+                    <div class="baloon">
+                        <div class="container"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></div>
+                        <div  class="text1"><h6><i>• 00/00/00</i></h6></div>
+                        <div class="text2"><h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus.</h6></div>
+                    </div>              
+                </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="newsletter">        
+        <br>
+        <h1>CADASTRE-SE EM NOSSA NEWSLLETER</h1>
+            <form method="POST" id="formNewsLetter" action="submetido.html">
+                <input type="text" placeholder="Nome" id="Nome">
+                <input type="text" placeholder="Email" id="Email">
+                <input type="text" placeholder="Telefone" id="Telefone" maxlength="11">  
+                <input type="submit" value="CADASTRAR">
+                <div id="tooltip" ><p>Preencha este campo</p></div>
+            </form> 
+        <div class="line"></div>
+        <div class="container1">  
+            <div>
+                <p>RAZÃO SOCIAL DA EMPRESA</p>
+                <p>CNPJ: 00.000.000/0001-00</p>
+                <p>ENDEREÇO</p>
+                <p>CEP: 00000-000</p>
+            </div>
+            <div class="container2">
+                <div class="atalhos">
+                     <h1>INSTITUCIONAL</h1>
+                     <br>
+                     <p><a href="">Quem Somos</a></p>
+                     <p><a href="">Política de Privacidade</a></p>
+                     <p><a href="">Objetivo</a></p>
+                     <p><a href="">Troca e Devoluções</a></p>
+                     <p><a href="">Promoção</a></p>
+                </div>
+                <div class="atalhos">
+                    <h1>DÚVIDAS</h1>
+                    <br>
+                    <p><a href="">Meus Pedidos</a></p>
+                    <p><a href="">Minha Conta</a></p>
+                    <p><a href="">Entrega</a></p>
+                    <p><a href="">Pagamentos</a></p>
+                    <p><a href="">Dúvidas Frequentes</a></p>
+                    <p><a href="">Fale Conosco</a></p>
+               </div>
+               <div class="atalhos">
+                    <h1>REDES SOCIAIS</h1>
+                    <br>
+                    <div class="imagens">
+                        <a href=""><img src="imagens/social-media-facebook.png" alt="facebook" width="50" height="50"></a>
+                        <a href=""><img src="imagens/social-media-instagran.png" alt="instagran" width="50" height="50"></a>
+                        <a href=""><img src="imagens/social-media-twiter.png" alt="twiter" width="48" height="44"></a>
+                    </div>            
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="footer">        
+        <p>Copyright <b>© 2021 MarcaNome</b> All Right reserved.</p>
+        <div class="container">
+            <p>Voltar ao topo</p>
+            <div class="arrowTop" onclick="topPage()"><i class="fas fa-chevron-up color"></i></div>          
+        </div>
+    </div>
+</footer>
+
+    <!-- ------------JAVASCRIPT------------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
